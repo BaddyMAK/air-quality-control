@@ -1,6 +1,3 @@
-import sps30
-from sps30 import SPS30
-from time import sleep
 import subprocess
 import serial
 import struct
@@ -21,8 +18,6 @@ def get_usb(): # - list all devices connected to USB port and make sure no other
 
 usbs = get_usb()
 print(usbs)
-
-
 def read_values(ser):
     ser.flushInput()
     # Ask for data
